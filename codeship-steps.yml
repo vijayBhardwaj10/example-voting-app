@@ -18,17 +18,17 @@
     - type: push
       service: vote
       name: push_vote_image
-      image_name: rheinwein/examplevotingapp-vote
+      image_name: ibuchh/examplevotingapp-vote
       image_tag: "{{.CommitID}}"
     - type: push
       service: result
       name: push_result_image
-      image_name: rheinwein/examplevotingapp-result
+      image_name: ibuchh/examplevotingapp-result
       image_tag: "{{.CommitID}}"
     - type: push
       service: worker
       name: push_worker_image
-      image_name: rheinwein/examplevotingapp-worker
+      image_name: ibuchh/examplevotingapp-worker
       image_tag: "{{.CommitID}}"
 
 - type: serial
