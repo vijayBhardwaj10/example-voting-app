@@ -12,7 +12,7 @@
     command: echo "Tests passed!"
 - type: parallel
   name: push_images
-  tag: master
+  tag: dev
   encrypted_dockercfg_path: dockercfg.encrypted
   steps:
     - type: push
@@ -32,7 +32,7 @@
       image_tag: "{{.CommitID}}"
 
 - type: serial
-  tag: master
+  tag: dev
   steps:
     - name: deployment
       service: google-cloud-deployment 
