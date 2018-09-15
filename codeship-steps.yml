@@ -35,5 +35,5 @@
   tag: dev
   steps:
     - name: deployment
-      service: google-cloud-deployment 
-      command: ./deploy/gke-deployment.sh 
+      service: aws-cloud-eks-deployment 
+      command: ./deploy/eks-deployment.sh 
