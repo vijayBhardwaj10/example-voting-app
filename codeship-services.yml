@@ -45,9 +45,9 @@ services:
     volumes:
       - "db-data:/var/lib/postgresql/data"
 
-  google-cloud-deployment:
-    image: codeship/google-cloud-deployment
-    encrypted_env_file: gke.encrypted
+  aws-cloud-eks-deployment:
+    image: codeship/eks-kubectl
+    encrypted_env_file: aws-k8s-env.encrypted
     entrypoint: "/bin/bash"
     volumes:
       - ./deploy:/deploy
