@@ -117,7 +117,7 @@ spec:
       containers:
       - name: result
         image: ibuchh/examplevotingapp-result:latest
-	imagePullPolicy: "Always" 
+        imagePullPolicy: "Always" 
         ports:
         - containerPort: 80
           name: result
@@ -155,7 +155,7 @@ spec:
       containers:
         - name: vote
           image: ibuchh/examplevotingapp-vote:latest
-	  imagePullPolicy: "Always" 
+          imagePullPolicy: "Always" 
           ports:
             - 
               containerPort: 80
@@ -189,5 +189,5 @@ spec:
       containers: 
         - 
           image: ibuchh/examplevotingapp-worker:latest
-	  imagePullPolicy: "Always"
+          imagePullPolicy: "Always"
           name: worker
